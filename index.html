@@ -1,0 +1,60 @@
+<html>
+<head>
+	<!-- Данная версия сайта не имеет в себе файла STYLE.CSS -->
+	<!-- Данная версия сайта не имеет в себе файла STYLE.CSS -->
+	<!-- Данная версия сайта не имеет в себе файла STYLE.CSS -->
+
+	<meta charset = "utf-8">
+	<title>CHAPPiE</title>
+	
+	<style>
+   @font-face {
+    font-family: LOGO;
+    src: url(font_site/10350.ttf);
+   }
+	</style>
+	
+	<!-- Данная версия сайта не имеет в себе файла STYLE.CSS -->
+	<!-- Данная версия сайта не имеет в себе файла STYLE.CSS -->
+	<!-- Данная версия сайта не имеет в себе файла STYLE.CSS -->
+</head>
+
+<body background="fon_site/background2.jpg">    
+	
+	<center id="logo" style="font-size: 80px; font-family: LOGO; border: 2px solid black; background: gray;"> 
+		CHAPPiE software
+	</center>
+	
+    <div align="center" id="auto_hidden" style="margin-top: 30px; border: 2px solid black; background: gray;">
+        <b style="font-size: 24px;">Шифровка и дешифровка текста методом Короля</b> <br />
+        <b style="font-size: 20px;">Ключ</b> 
+			<textarea id="key" name="key" size="4" cols="10" rows="1"></textarea>
+        <b style="font-size: 20px;">Исходный текст</b>
+		<textarea id="text" size="20" cols="10" rows="1"></textarea> <br />
+				<p></p>
+			<input type="button" id="code_button" value="Зашифровать" name="button_Code" style="font-size: 20px;"/>
+			<input type="button" id="decode_button" value="Расшифровать" style="font-size: 20px;"/>
+			<input type="button" id="auto_decode_button" value="Подобрать" style="font-size: 20px;"/> <br />
+				<p></p>
+        <b style="font-size: 20px;">Зашифрованный текст</b>
+			<textarea id="text_code" type="text" size="20" rows="1"></textarea> <br />
+        <b style="font-size: 20px;">Дешифрованный текст</b>
+			<textarea id="text_decode" type="text" size="20" rows="1"></textarea> <br />
+		<b style="font-size: 20px;">Кол-во ключей (От N до 0)</b>
+			<input id="auto_num_lesson_decode" type="number" size="10"/>
+				<hr>
+		<b style="font-size: 20px;">Подбор</b> <br />
+			<textarea readonly id="auto_text_decode" type="text" cols="70" rows="4" style='font-size: 32px; resize: vertical;'></textarea> <br />	
+			<input type="hidden" id="auto_num_decode" /> <br />
+				<hr>
+				<p></p>
+			<input type="button" id="code_clear" value="Зачистка" style="font-size: 20px; margin-top: -8px;"/>
+			<input type="button" id="special_auto_decode" value="Специальный подбор" style="font-size: 20px; margin-top: -8px;"/>
+			<input type="button" onclick="hide()" id="code_hidden" value="Скрыть" style="font-size: 20px; margin-top: -8px;"/>
+				<p></p>
+	</div>	
+	
+	<script type="text/javascript" src="javascript_site/caesar.js"></script>
+	
+</body>
+</html>
